@@ -1,6 +1,14 @@
-body {
-    background-color: white;
+body.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Opcional: Color de fondo para toda la página */
   }
+  
   
   textarea[name="user-input"] {
     font-size: 16px;
@@ -36,9 +44,9 @@ body {
     font-size: 1rem;
   }
   
-  header {
+  .header {
     overflow: hidden;
-    background-color: #6ebbc6;
+    background-color: black;
     padding: 20px 10px;
   }
   
