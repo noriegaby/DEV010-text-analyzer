@@ -1,7 +1,8 @@
-body{
-    background-color:white; 
-}
-textarea[name="user-input"] {
+body {
+    background-color: white;
+  }
+  
+  textarea[name="user-input"] {
     font-size: 16px;
     height: 30%;
     margin: 0;
@@ -9,17 +10,13 @@ textarea[name="user-input"] {
     padding: 20px;
     width: 70%;
     background-color: white;
-    color: #44d3f3 ;
-    border-color:#44d3f3 ; /* Color del borde*/
+    color: #44d3f3;
+    border-color: #44d3f3;
     border: solid 1px;
     margin-bottom: 30px;
     resize: none;
-    
   }
-  img {
-    width: 20%;
-    height: 20%;  
-  }
+  
   .item {
     font-size: 1.5rem;
     display: flex;
@@ -28,25 +25,25 @@ textarea[name="user-input"] {
     margin: auto auto;
     border: solid 1px;
     border-color: #44d3f3;
-    background-color: white  ;
+    background-color: white;
     padding: 3px;
     width: 32%;
     list-style: none;
     font-style: italic;
   }
-
-  footer{
+  
+  footer {
     font-size: 1rem;
   }
-
+  
   header {
-      overflow: hidden;
-      background-color: #6ebbc6;
-      padding: 20px 10px;
-    
+    overflow: hidden;
+    background-color: #6ebbc6;
+    padding: 20px 10px;
   }
-   #reset-button{
-    color:#6be5fb;
+  
+  #reset-button {
+    color: #6be5fb;
     background: green;
   }
-
+  
