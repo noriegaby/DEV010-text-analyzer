@@ -11,16 +11,16 @@ body{
 
   textarea[name="user-input"] {
     font-size: 16px;
-    height: 30%;
+    height: 20%;
     margin: 0;
     outline: 0;
-    padding: 20px;
-    width: 70%;
+    padding: 15px;
+    width: 60%;
     background-color: white;
-    color: #44d3f3;
-    border-color: #44d3f3;
+    color: #93cbfb ;
+    border-color: #93cbfb;
     border: solid 1px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     resize: none;
   }
   
@@ -33,17 +33,17 @@ body{
     align-items: center;
     margin: auto auto;
     border: solid 1px;
-    border-color: #44d3f3;
+    border-color: #93cbfb;
     background-color: white;
     padding: 1px;
-    width: 30%;
+    width: 25%;
     list-style: none;
   }
   
   /* Estilos para el footer */
   footer {
-    font-size: 1rem;
-    color: rgb(64, 8, 113);
+    font-size: 2rem;
+    color: #7993c2 ;
   }
   
     /* Estilos para el header */
@@ -52,9 +52,9 @@ body{
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
     overflow: hidden;
-    background-color: rgb(60, 150, 195); /* Color de fondo del encabezado */
-    padding: 20px 10px; /* Espaciado interno (arriba/abajo: 20px, izquierda/derecha: 10px) */
-    color: #f0f0f0; /* Color del texto dentro del encabezado */
+    background-color:  #93cbfb ; /* Color de fondo del encabezado */
+    padding: 10px 5px; /* Espaciado interno (arriba/abajo:, izquierda/derecha:) */
+    color: white; /* Color del texto dentro del encabezado */
   }  
   
   /* Estilos para el botón */
@@ -66,16 +66,18 @@ body{
   }
   
   #reset-button {
-    font-size: 20px; /* Tamaño del texto del botón*/
-    padding: 15px 22px; /* Tamaño botton */
-    background-color: #44d3f3;
+    font-size: 15px; /* Tamaño del texto del botón*/
+    padding: 10px 15px; /* Tamaño botton */
+    background-color:  #7993c2 ; /* Color de fondo del encabezado */
     color: white;
     border: none;
     cursor: pointer;
   }
 
-  
-  
-  
+  img {
+    width: 10%; /* Ancho de la imagen */
+    height: 10%; /* Altura de la imagen */
+  }
+ 
   
   
