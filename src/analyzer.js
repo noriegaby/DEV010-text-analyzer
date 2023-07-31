@@ -1,22 +1,54 @@
-const analyzer = {  
+
+const analyzer = {
   getWordCount: (text) => {
+    const wCount = text.trim().split(" ");
+    return wCount.length;
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
   getCharacterCount: (text) => {
+    const chatCount = text.length;
+    return chatCount;
+
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
   },
   getCharacterCountExcludingSpaces: (text) => {
+    const charCountNotSpace = text.replace(/[^a-z0-9]/gi,'').length;
+    return charCountNotSpace;
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
   },
-  getAverageWordLength: (text) => {    
+  getAverageWordLength: (text) => {
+    const countCharacter = text.replaceAll(" ", "").length;
+    const wordCount = analyzer.getWordCount(text);
+    if (wordCount === 0) {
+      return 0;
+    }
+    const averageLength = countCharacter / wordCount;
+    return parseFloat(averageLength.toFixed(2));
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberCount: (text) => {
+    const textSplit = text.split(' ')
+    let contador =0;
+    for (let i =0; i<textSplit.length; i++){
+      if (Number(textSplit[i])){
+        contador ++;
+      }
+    }
+    return contador;
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberSum: (text) => {
+    const textSplit = text.split(' ')
+    let contador = 0;
+    for (let i =0; i <textSplit.length; i++){
+      if (Number(textSplit[i])) {
+        contador = contador + Number(textSplit[i])
+      }
+    }
+    return contador;
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
   },
 };
 
 export default analyzer;
+
