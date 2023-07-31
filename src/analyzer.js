@@ -1,13 +1,14 @@
 
+// Definición de un objeto llamado analyzer
 const analyzer = {
 
-    getWordCount: (text) => {
-      const words = text.trim().split(/\s+/);
-      const wCount = words.filter(word => isNaN(word)).length;
-      return wCount;
-    },
-    //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
-
+  getWordCount: (text) => {
+    const words = text.trim().split(/\s+/);  // Elimina espacios al principio y al final del texto, y divide el texto en palabras
+    const wCount = words.filter(word => isNaN(word)).length;// Filtra las palabras para excluir aquellas que son números
+    return wCount; // Retorna el recuento de palabras en el texto
+ //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
+  },
+ 
   getCharacterCount: (text) => {
     const chatCount = text.length;
     return chatCount;
