@@ -43,6 +43,7 @@ body{
   /* Estilos para el footer */
   footer {
     font-size: 1rem;
+    color: rgb(64, 8, 113);
   }
   
   /* Estilos para el header */
@@ -65,8 +66,8 @@ body{
   }
   
   #reset-button {
-    font-size: 16px; /* Tamaño del texto del botón*/
-    padding: 15px 25px; /* Ajusta el padding del botón para hacerlo más grande */
+    font-size: 20px; /* Tamaño del texto del botón*/
+    padding: 15px 22px; /* Tamaño botton */
     background-color: #44d3f3;
     color: white;
     border: none;

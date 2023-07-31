@@ -15,7 +15,7 @@ cajaTexto.addEventListener("keyup", () => {
   li3.textContent = "Caracteres sin espcios: " + analyzer.getCharacterCountExcludingSpaces(cajaTexto.value);
   li4.textContent = "Numeros: " + analyzer.getNumberCount(cajaTexto.value);
   li5.textContent = "Suma Numeros: " + analyzer.getNumberSum(cajaTexto.value);
-  li6.textContent = "Promedio Letras: " + analyzer.getAverageWordLength(cajaTexto.value);
+  li6.textContent = "Promedio por palabra: " + analyzer.getAverageWordLength(cajaTexto.value);
 });
 
 const boton = document.getElementById("reset-button");
@@ -26,7 +26,7 @@ boton.addEventListener("click", function () {
   li3.textContent = "Caracteres sin espacios: 0";
   li4.textContent = "Numeros: 0";
   li5.textContent = "Suma Numeros: 0";
-  li6.textContent = "Promedio Letras: 0";
+  li6.textContent = "Promedio por palabra: 0";
 });
 
 
