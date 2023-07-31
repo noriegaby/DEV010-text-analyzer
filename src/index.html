@@ -8,13 +8,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
+    <!-- Encabezado con clase 'header' para estilo en css -->
     <header class="header">
-    <h1 class="centered-text">Analizador de Texto</h1> </header>
+      <!-- Título principal -->
+      <h1 class="centered-text">Analizador de Texto</h1>
+    </header>
+    
+    <!-- Subtítulo -->
     <h2>Por favor escribe en siguiente cuadro</h2>
+    
+    <!-- Textarea 'user-input' -->
     <section class="contenedor">
       <textarea name="user-input" cols="50" rows="10"></textarea>
     </section>
+
+    <!-- Lista con clase 'contenedor' -->
     <ul class="contenedor">
+      <!-- Elemento de lista para cada concepto -->
       <li class="item" data-testid="word-count">Palabras</li>
       <li class="item" data-testid="character-count">Caracteres</li>
       <li class="item" data-testid="character-no-spaces-count">Caracteres sin espacios</li>
@@ -22,10 +32,17 @@
       <li class="item" data-testid="number-sum">Suma Numero</li>
       <li class="item" data-testid="word-length-average">Promedio por palabra</li>
     </ul>
+    
+    <!-- Seccion contenedora para el boton para darle estilo en css -->
     <section class="contenedor">
+      <!-- Boton con ID 'reset-button' -->
       <button id="reset-button">Borrar</button>
     </section>
+
+  <!-- Script para cargar el archivo 'index.js' como modulo -->
   <script src="index.js" type="module"></script>
+  
+  <!-- Pie de pagina con footer -->
   <footer>
     <p>Gaby Noriega</p>
   </footer>
