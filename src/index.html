@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
-    <header>
-    <h1>Analizador de Texto</h1> </header>
+    <header class="header">
+    <h1 class="centered-text">Analizador de Texto</h1> </header>
     <h2>Por favor escribe en siguiente cuadro</h2>
     <section class="contenedor">
       <textarea name="user-input" cols="50" rows="10"></textarea>
@@ -17,16 +17,17 @@
     <ul class="contenedor">
       <li class="item" data-testid="word-count">Palabras</li>
       <li class="item" data-testid="character-count">Caracteres</li>
-      <li class="item" data-testid="character-no-spaces-count">Letras</li>
+      <li class="item" data-testid="character-no-spaces-count">Caracteres sin espacios</li>
       <li class="item" data-testid="number-count">Numero</li>
       <li class="item" data-testid="number-sum">Suma Numero</li>
       <li class="item" data-testid="word-length-average">Promedio por palabra</li>
     </ul>
-
-    <footer>
-      <p>Gaby Noriega</p>
-    </footer>
-    <button id="reset-button">Borrar</button>
+    <section class="contenedor">
+      <button id="reset-button">Borrar</button>
+    </section>
   <script src="index.js" type="module"></script>
+  <footer>
+    <p>Gaby Noriega</p>
+  </footer>
 </body>
 </html>
