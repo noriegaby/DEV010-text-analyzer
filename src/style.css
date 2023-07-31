@@ -1,15 +1,9 @@
-body.centered {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Opcional: Color de fondo para toda la página */
+/* Estilos para el cuerpo centrado */
+body{
+    background-color: #f0f0f0; 
   }
   
-  
+  /* Estilos para el textarea */
   textarea[name="user-input"] {
     font-size: 16px;
     height: 30%;
@@ -25,6 +19,7 @@ body.centered {
     resize: none;
   }
   
+  /* Estilos para los elementos de la lista */
   .item {
     font-size: 1.5rem;
     display: flex;
@@ -40,16 +35,19 @@ body.centered {
     font-style: italic;
   }
   
+  /* Estilos para el footer */
   footer {
     font-size: 1rem;
   }
   
-  .header {
+  /* Estilos para el header */
+  header {
     overflow: hidden;
     background-color: black;
     padding: 20px 10px;
   }
   
+  /* Estilos para el botón */
   #reset-button {
     color: #6be5fb;
     background: green;
