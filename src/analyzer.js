@@ -1,6 +1,6 @@
 
 const analyzer = {
-  
+
     getWordCount: (text) => {
       const words = text.trim().split(/\s+/);
       const wCount = words.filter(word => isNaN(word)).length;
@@ -19,16 +19,21 @@ const analyzer = {
     return charCountNotSpace;
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
   },
+
   getAverageWordLength: (text) => {
-    const countCharacter = text.replaceAll(" ", "").length;
-    const wordCount = analyzer.getWordCount(text);
+   
+    const textWithoutNumbers = text.replace(/\d+/g, ''); // Eliminar los numeros del texto 
+    const countCharacter = textWithoutNumbers.replace(/\s/g, '').length;// Contar la cantidad de caracteres sin espacios 
+    const words = textWithoutNumbers.trim().split(/\s+/);   // Contar la cantidad de palabras sin números
+    const wordCount = words.length;
     if (wordCount === 0) {
       return 0;
     }
-    const averageLength = countCharacter / wordCount;
+    const averageLength = countCharacter / wordCount; // Calcular promedio de palabras
     return parseFloat(averageLength.toFixed(2));
-    //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
   },
+  //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
+
   getNumberCount: (text) => {
     const textSplit = text.split(' ')
     let contador =0;

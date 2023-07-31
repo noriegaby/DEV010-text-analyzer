@@ -2,8 +2,13 @@
 body{
     background-color: #f0f0f0; 
   }
-  
+
+    .contenedor{
+    display: flex;
+    justify-content: center;
+  }
   /* Estilos para el textarea */
+
   textarea[name="user-input"] {
     font-size: 16px;
     height: 30%;
@@ -19,9 +24,10 @@ body{
     resize: none;
   }
   
+
   /* Estilos para los elementos de la lista */
   .item {
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,10 +35,9 @@ body{
     border: solid 1px;
     border-color: #44d3f3;
     background-color: white;
-    padding: 3px;
-    width: 32%;
+    padding: 1px;
+    width: 30%;
     list-style: none;
-    font-style: italic;
   }
   
   /* Estilos para el footer */
@@ -42,14 +47,34 @@ body{
   
   /* Estilos para el header */
   header {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
     overflow: hidden;
-    background-color: black;
+    background-color:rgb(60, 150, 195);
     padding: 20px 10px;
+    color: #f0f0f0;
   }
   
   /* Estilos para el botón */
-  #reset-button {
-    color: #6be5fb;
-    background: green;
+  button.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura del contenedor según tus necesidades */
   }
+  
+  #reset-button {
+    font-size: 16px; /* Tamaño del texto del botón*/
+    padding: 15px 25px; /* Ajusta el padding del botón para hacerlo más grande */
+    background-color: #44d3f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  
+  
+  
+  
   
