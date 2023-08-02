@@ -36,21 +36,22 @@ const analyzer = {
   //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
 
   getNumberCount: (text) => {
-    const textSplit = text.split(' ')
-    let contador =0;
-    for (let i =0; i<textSplit.length; i++){
-      if (Number(textSplit[i])){
+    const textSplit = text.split(' ')   // Se divide el texto en palabras utilizando el espacio como separador y se almacena en "textSplit".
+    let contador =0; // Se inicializa un contador en 0 para llevar la cuenta de los números encontrados en el texto.
+    for (let i =0; i<textSplit.length; i++){ // Se recorre el array de palabras.
+      if (Number(textSplit[i])){   // Si la palabra actual se puede convertir a un número, se aumenta el contador en 1.
         contador ++;
       }
     }
-    return contador;
+    return contador;  // Se devuelve la cantidad total de números
+
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberSum: (text) => {
-    const textSplit = text.split(' ')
-    let contador = 0;
-    for (let i =0; i <textSplit.length; i++){
-      if (Number(textSplit[i])) {
+    const textSplit = text.split(' ') // Se divide el texto en palabras utilizando el espacio como separador y se almacena en "textSplit".
+    let contador = 0; // Se inicializa un contador en 0 para llevar la cuenta de los números encontrados en el texto.
+    for (let i =0; i <textSplit.length; i++){ // Se recorre el array de palabras.
+      if (Number(textSplit[i])) { // Si la palabra actual se puede convertir a un número, se suma al contador.
         contador = contador + Number(textSplit[i])
       }
     }
