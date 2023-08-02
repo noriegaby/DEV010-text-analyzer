@@ -1,4 +1,32 @@
 # Analizador de texto
+# By Gaby Noriega
+## INTRODUCCION
+* A continuacion les presento mi version de Text Analyzer, que cuenta con las siguientes funciones:
+
+1. La aplicación permite al usuario ingresar un texto escribiéndolo
+en un cuadro de texto.
+
+2. La aplicación calcula las siguientes métricas y actualizar el
+resultado en tiempo real a medida que el usuario escribe su texto:
+
+    - **Recuento de palabras**: la aplicación cuenta el número de
+    palabras en el texto de entrada y mostrar este recuento al usuario
+    - **Recuento de caracteres**: la aplicación cuenta el número de
+    caracteres en el texto de entrada, incluidos espacios y signos de
+    puntuación, y muestra este recuento al usuario.
+    - **Recuento de caracteres excluyendo espacios y signos de puntuación**:
+    la aplicación cuenta el número de caracteres en el texto de
+    entrada, excluyendo espacios y signos de puntuación, y muestra este recuento
+    al usuario.  
+    - **Recuento de números**: la aplicación cuenta cúantos números hay en
+    el texto de entrada y muestra este recuento al usuario.
+    - **Suma total de números**: la aplicación suma todos los números que
+    hay en el texto de entrada y muestra el resultado al usuario.
+    - **Longitud media de las palabras**: la aplicación calcula la
+    longitud media de las palabras en el texto de entrada y la muestra al usuario.
+
+4. La aplicación permite limpiar el contenido de la caja de texto haciendo
+clic en un botón Borrar
 
 ## Índice
 
