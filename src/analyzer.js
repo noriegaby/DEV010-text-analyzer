@@ -23,15 +23,15 @@ const analyzer = {
 
   getAverageWordLength: (text) => {
    
-    const textWithoutNumbers = text.replace(/\d+/g, ''); // Eliminar los numeros del texto 
-    const countCharacter = textWithoutNumbers.replace(/\s/g, '').length;// Contar la cantidad de caracteres sin espacios 
-    const words = textWithoutNumbers.trim().split(/\s+/);   // Contar la cantidad de palabras sin números
-    const wordCount = words.length;
+    const textWithoutNumbers = text.replace(/\d+/g, ''); // Eliminar los numeros del texto
+    const countCharacter = textWithoutNumbers.replace(/\s/g, '').length;// Contar la cantidad de caracteres sin espacios SOLO LETRAS
+    const words = textWithoutNumbers.trim().split(/\s+/);   // Contar la cantidad de palabras sin números 
+    const wordCount = words.length; 
     if (wordCount === 0) {
       return 0;
     }
     const averageLength = countCharacter / wordCount; // Calcular promedio de palabras
-    return parseFloat(averageLength.toFixed(2));
+    return parseFloat(averageLength.toFixed(2)); //parseFloat es para asegurar un resultado numero y toFixed para que solo sea 2 decimales
   },
   //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
 
@@ -44,7 +44,6 @@ const analyzer = {
       }
     }
     return contador;  // Se devuelve la cantidad total de números
-
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
   },
   getNumberSum: (text) => {
